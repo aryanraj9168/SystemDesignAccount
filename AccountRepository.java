@@ -1,6 +1,6 @@
-public class AccountRepository {
+import java.util.List;
 
-    public void save(BankAccount account) {
-        System.out.println("Saving account to database");
-    }
+public interface AccountRepository {
+    void save(Account account);
+    List<Account> findAll();
 }
